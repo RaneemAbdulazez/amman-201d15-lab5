@@ -132,10 +132,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+let mult=1;
+let ret1=[];
 function multiplyArray(multArr) {
+
+  for(let i=0;i<testArray.length;i++){
+       mult=mult*testArray[i];
+
+  }
+  ret1.push(mult);
+  let sec=`The numbers ${testArray} have a product of ${mult}.`
+  ret1.push(sec);
+  
+
+
+return ret1;
+
+
   //eslint-disable-line
 }
 
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyArray(testArray);
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
